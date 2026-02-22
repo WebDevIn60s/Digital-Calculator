@@ -2,6 +2,13 @@
 
 A beautiful, responsive digital calculator with realistic 3D design, built with separate HTML, CSS, and JavaScript files. Features a stunning animated background, backspace arrow icon, and perfect responsiveness across all devices.
 
+## 🚀 Project Preview
+
+<p align="center">
+  <img src="Calc.png" width="410"/>
+</p>
+
+----
 ## ✨ Features
 
 ### 🎨 Design & Aesthetics
