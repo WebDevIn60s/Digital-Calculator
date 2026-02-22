@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>DIGITAL CALCULATOR</h1>
+            <p>Modern • Precise • Elegant</p>
+        </div>
+        <div class="calculator">
+            <div class="display">
+                <div class="previous-operand" id="previousOperand"></div>
+                <div class="current-operand" id="currentOperand">0</div>
+            </div>
+            <div class="buttons">
+                <button class="clear" onclick="calculator.clear()">AC</button>
+                <button class="delete" onclick="calculator.delete()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.53451 3C8.10015 3 9.5916 3.67525 10.6228 4.85892L11.4703 5.87373C11.8302 6.29661 12.1698 6.29661 12.5297 5.87373L13.3772 4.85892C14.4084 3.67525 15.8998 3 17.4655 3C20.5329 3 23 5.46708 23 8.53451C23 10.1002 22.3247 11.5916 21.1411 12.6228L13.3895 19.3237C12.6222 20.0052 11.3778 20.0052 10.6105 19.3237L2.85892 12.6228C1.67525 11.5916 1 10.1002 1 8.53451C1 5.46708 3.46708 3 6.53451 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 11L15 11M15 11L12 8M15 11L12 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(-3, 0)"/>
+                    </svg>
+                    <span class="backspace-icon">⌫</span>
+                </button>
+                <button class="operator" onclick="calculator.chooseOperation('÷')">÷</button>
+                
+                <button class="number" onclick="calculator.appendNumber('7')">7</button>
+                <button class="number" onclick="calculator.appendNumber('8')">8</button>
+                <button class="number" onclick="calculator.appendNumber('9')">9</button>
+                <button class="operator" onclick="calculator.chooseOperation('×')">×</button>
+                
+                <button class="number" onclick="calculator.appendNumber('4')">4</button>
+                <button class="number" onclick="calculator.appendNumber('5')">5</button>
+                <button class="number" onclick="calculator.appendNumber('6')">6</button>
+                <button class="operator" onclick="calculator.chooseOperation('-')">−</button>
+                
+                <button class="number" onclick="calculator.appendNumber('1')">1</button>
+                <button class="number" onclick="calculator.appendNumber('2')">2</button>
+                <button class="number" onclick="calculator.appendNumber('3')">3</button>
+                <button class="operator" onclick="calculator.chooseOperation('+')">+</button>
+                
+                <button class="number" onclick="calculator.appendNumber('0')">0</button>
+                <button class="decimal" onclick="calculator.appendNumber('.')">.</button>
+                <button class="equals" onclick="calculator.compute()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
